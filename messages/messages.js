@@ -1,0 +1,17 @@
+module.exports = {
+    manga_entry_all:"A list of all manga in the database",
+    manga_entry_saved:"Manga was successfully saved",
+    manga_entry_exists:"Manga with that title already exists",
+    manga_entry_GETbyID:"Manga - GET by ID",
+    manga_entry_novalid:"No valid entry found for provided ID", 
+    manga_entry_updated:"Manga was successfully updated",
+    manga_entry_deleted:"Manga was successfully deleted",
+    manga_entry_notfound:"Manga was not found",
+    anime_entry_all:"A list of all Anime in the database",
+    anime_entry_saved:"Anime was successfully saved",
+    anime_entry_exists:"Anime with that title already exists",
+    anime_entry_GETbyID:"Anime - GET by ID",
+    anime_entry_novalid:"No valid entry found for provided ID", 
+    anime_entry_updated:"Anime was successfully updated",
+    anime_entry_deleted:"Anime was successfully deleted",
+}

@@ -1,9 +1,16 @@
 const mongoose = require("mongoose");
 
-const animeSchema = mongoose.Schemas({
-    _id: mongoose.Schema.Types.ObjectId,
-    title: String,
-    author: String,
-})
+const animeSchema = new mongoose.Schema({
+  _id: mongoose.Schema.Types.ObjectId,
+  manga: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Manga',
+    required: true
+  },
+  studio: { type: String, required: true },
+  seasons: { type: String, required: true },
+  episodes: { type: String, required: true },
+});
 
-module.exports = mongoose.models("Anime", animeSchema)
+
+module.exports = mongoose.model("Anime", animeSchema);

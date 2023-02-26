@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-const authorRoutes = require("../api/routes/anime");
+const animeRoutes = require("../api/routes/anime");
 const mangaRoutes = require("../api/routes/manga");
 
 // middleware for logging with morgan
@@ -39,8 +39,8 @@ app.get("/", (req, res, next) => {
   });
 });
 
-app.use("/authors", authorRoutes);
 app.use("/manga", mangaRoutes);
+app.use("/anime", animeRoutes);
 
 // adding middleware for errors and bad url requests
 app.use((req, res, next) => {
